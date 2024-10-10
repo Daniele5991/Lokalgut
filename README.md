@@ -1,2 +1,0 @@
-# Lokalgut
-Lokalgut Spendenseite
