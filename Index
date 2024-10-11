@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LokalGut Spenden</title>
+    <title>Lokalgut Spendenseite</title>
 </head>
 <body>
-    <h1>Unterstütze LokalGut</h1>
-    <p>Hilf uns, die App kostenlos zu halten und kontinuierlich zu verbessern. Deine Spende macht einen Unterschied!</p>
+    <h1>Unterstütze Lokalgut</h1>
+    <p>
+        Lokalgut soll weiterhin kostenlos bleiben und kontinuierlich verbessert werden. Alle bisher entstandenen Kosten werden von einer einzelnen Person getragen. 
+        Durch deine Spende kannst du sicherstellen, dass die App der Gemeinschaft weiterhin einen Mehrwert bietet. Vielen Dank für deine Unterstützung!
+    </p>
+    
+    <!-- PayPal Spenden Button -->
     <div id="donate-button-container">
         <div id="donate-button"></div>
         <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
         <script>
-        PayPal.Donation.Button({
-            env: 'production',
-            hosted_button_id: '2LB6NL9GJ59ZG',
-            image: {
-                src: 'https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif',
-                alt: 'Spenden mit dem PayPal-Button',
-                title: 'PayPal - The safer, easier way to pay online!'
-            }
-        }).render('#donate-button');
+            PayPal.Donation.Button({
+                env: 'production',
+                hosted_button_id: '2LB6NL9GJ59ZG',
+                image: {
+                    src: 'https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif',
+                    alt: 'Spenden mit dem PayPal-Button',
+                    title: 'PayPal - The safer, easier way to pay online!',
+                }
+            }).render('#donate-button');
         </script>
     </div>
 </body>
